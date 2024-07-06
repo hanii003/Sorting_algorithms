@@ -1,6 +1,3 @@
-Here is an implementation of the merge sort algorithm in C++ for sorting numerical data:
-
-```cpp
 #include <iostream>
 #include <vector>
 
@@ -80,6 +77,3 @@ int main() {
 
     return 0;
 }
-```
-
-You can modify this code to sort textual data (strings) by changing the data type from `int` to `string` and adjusting the input dataset accordingly.
