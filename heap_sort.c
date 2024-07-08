@@ -34,3 +34,21 @@ void heapSort(vector<int>& arr) {
         heapify(arr, i, 0);
     }
 }
+
+
+
+
+int main() {
+    vector<int> nums = {12, 11, 13, 5, 6, 7};
+   
+    heapSort(nums);
+   
+    cout << "Sorted array is: ";
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    cout << endl;
+   
+    return 0;
+}
+
