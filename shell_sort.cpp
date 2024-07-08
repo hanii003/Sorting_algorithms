@@ -17,3 +17,23 @@ void shellSort(vector<int>& arr) {
         }
     }
 }
+
+int main() {
+    vector<int> data = {9, 7, 5, 11, 12, 2, 14, 3, 10, 6};
+    
+    cout << "Before sorting:" << endl;
+    for (int num : data) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    shellSort(data);
+    
+    cout << "After sorting:" << endl;
+    for (int num : data) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
