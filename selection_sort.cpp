@@ -35,27 +35,3 @@ int main() {
     for (int i = 0; i < 1000000; i++) {
         largeNums.push_back(rand() % 1000000);
     }
-
-    // Sort and measure time for small dataset
-    clock_t start = clock();
-    selectionSort(smallNums);
-    clock_t end = clock();
-    double time_taken = double(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Time taken for sorting small dataset: " << time_taken << " seconds" << std::endl;
-
-    // Sort and measure time for medium dataset
-    start = clock();
-    selectionSort(mediumNums);
-    end = clock();
-    time_taken = double(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Time taken for sorting medium dataset: " << time_taken << " seconds" << std::endl;
-
-    // Sort and measure time for large dataset
-    start = clock();
-    selectionSort(largeNums);
-    end = clock();
-    time_taken = double(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Time taken for sorting large dataset: " << time_taken << " seconds" << std::endl;
-
-    return 0;
-}
